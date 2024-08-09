@@ -19,7 +19,7 @@
 }
 /* Header */
 .header {
-    background-image: url(/assets/img/br_header.jpg);
+    background-image: url(./assets/img/br_header.jpg);
     height: 655px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */

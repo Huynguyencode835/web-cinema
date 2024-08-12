@@ -104,7 +104,7 @@
     padding: 56px 0;
 }
 
-.movieshow > .gird > h2 {
+.movieshow > .gird .movieshow__basegird > h2 {
     text-align: center;
     font-size: 35px;
 }
@@ -301,14 +301,12 @@ footer .footer__table--list span {
 .col_4--section_middle>div{
     margin-top:14px;
 }
-.col_4--section_middle button{
-    outline:none;
-    padding:0px;
-    background:rgb(17,17,17);
-}
-.col_4--section_middle button img{
-    width:60px;
-    position:relative;
+.col_4--section_middle .middle__button img{
+    width:150px;
+    height:40px;
+    margin: 0px 0px 0px 6px;
+    Background-origin: border-box;
+    background-size:cover;
 }
 .col_4--section_down{
     margin-top:85px;
@@ -344,23 +342,4 @@ footer .footer__table--list span {
 }
 .footer__down--section-left{
     padding-top:50px; 
-}
-
-
-
-.bu{
-    /* background-image: url('https://homepage.momocdn.net/img/momo-upload-api-210724113855-637627235353131497.jpg') ; */
-    background-position: center center;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-size:cover;
-    outline:none;
-    margin:0px;
-    height:40px; 
-    width:170px;
-    background-repeat:no-repeat;
-    overflow:Visible;
-    Background-origin: border-box;
-    margin: 0px auto 6px 6px;
-   
 }

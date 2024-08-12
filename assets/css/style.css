@@ -93,3 +93,208 @@
     font-size: 18px;
     margin-right: 6px;
 }
+
+/*css footer*/
+.gird{
+    width:1200px;
+    max-width: 100%;
+    margin:0 auto;
+}
+.block{
+    display:block;
+}
+.flex{
+    display:flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.white-space{
+    white-space:nowrap;
+}
+#hover-text:hover {
+    color:white !important;
+}
+.footer {
+    margin: 0px;
+    padding: 0px; 
+    font-size: 14px;
+}
+
+.footer b{
+    color: white;
+}
+.footer .footer__top{
+    background: rgb(17,17,17);
+    margin:0px;
+    padding: 30px 200px 20px 200px !important; 
+}
+footer a:hover {
+    color:white !important ;
+ }
+footer .footer__table--list a {
+    display:block;   
+    color:gray;
+    text-decoration: none;
+}
+footer .footer__table--list span {  
+    color:gray;
+}
+.footer .footer__table--list  {
+    justify-content: space-evenly;
+   
+}
+/* CSS Cột 1 */
+.footer .footer__table--list .footer__top--col_1{
+    width: 80%;
+}
+.footer .footer__table--list .footer__top--col_1 a {
+    padding-top: 14px;
+}
+/* CSS Cột 2 */
+.footer .footer__table--list .footer__top--col_2{
+    width: 70%;
+}
+.footer__top--col_2  div[class="flex"]{
+    padding-top: 22px;
+}
+.footer .footer__table--list .footer__top--col_2 a {
+    padding-left: 10px;
+}
+#footer--img{
+    width:24px;
+    height:24px;
+    margin-top: -5px ; 
+    
+}
+/* CSS Cột 3 */
+.footer .footer__table--list .footer__top--col_3{
+    width: 100%;
+    position:relative;
+}
+.col_3--section_top .block{
+    margin-top: 14px;
+}
+.col_3--section_top .flex{
+    margin-top: 4px;
+}
+.col_3--section--button{
+    border:1px solid white;
+    border-radius: 5px;
+    margin:12px 0px 0px 0px !important; 
+    background: black;
+    box-sizing:border-box ;
+    position:relative;
+    width: 65%;
+}
+#col_3--section_top--img{
+    width:28px;
+    height:37px;
+    padding:8px 8px 7px 8px;
+}
+.col_3--section_down{
+    margin-top:32px;
+}
+#col_3--section_down--img{
+    width:30px;
+    height:37px;
+    padding:8px 8px 7px 8px;
+}
+.button__text{
+    padding: 8px 8px 8px 4px;
+}
+.col_3--section_down .first {
+    margin-top:14px !important;
+}
+.col_3--section_down .flex{
+    margin-top:4px;
+}
+/* CSS Cột 4 */
+.footer .footer__table--list .footer__top--col_4{
+    width: 90%;
+    margin-left: 60px;
+    box-sizing: border-box;
+    position:relative;
+}
+.col_4--section_top img{
+    width:40px;
+    height:40px;
+    margin:14px 16px 14px 0px;
+    padding: 0px;
+}
+.col_4--section_top a>img{
+    justify-content: space-between;
+}
+.col_4--section_middle img{
+    width:80px;
+    height:80px;
+}
+.col_4--section_middle{
+    margin-top:85px;
+}
+.col_4--section_middle>div{
+    margin-top:14px;
+}
+.col_4--section_middle button{
+    outline:none;
+    padding:0px;
+    background:rgb(17,17,17);
+}
+.col_4--section_middle button img{
+    width:60px;
+    position:relative;
+}
+.col_4--section_down{
+    margin-top:85px;
+}
+.col_4--section_down img{
+    margin-top: 14px;
+}
+/* CSS footer down*/
+.footer .footer__down{
+    background: rgb(26,26,26);
+    margin-top:0px;
+    padding: 0px; 
+    color: gray;
+    width:100%
+}
+
+.footer .footer__down img{
+    width:50px; 
+    height:50px; 
+    border-radius: 10%;
+    margin-top: 10px;
+  
+}
+.footer__down--section-right{
+    padding: 10px 0px 10px 30px;
+}
+.footer__down #footer__down--text{
+   line-height: 10px;
+   text-indent: 10px;
+}
+.footer__down > div {
+    justify-content: space-between;
+}
+.footer__down--section-left{
+    padding-top:50px; 
+}
+
+
+
+.bu{
+    /* background-image: url('https://homepage.momocdn.net/img/momo-upload-api-210724113855-637627235353131497.jpg') ; */
+    background-position: center center;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-size:cover;
+    outline:none;
+    margin:0px;
+    height:40px; 
+    width:170px;
+    background-repeat:no-repeat;
+    overflow:Visible;
+    Background-origin: border-box;
+    margin: 0px auto 6px 6px;
+   
+}

@@ -3,6 +3,7 @@
     --text-while:#fafafa;
     --text-black:#0b090d;
     --hover-color:#d94918;
+    --hover1-color:#d9643d;
 }
 
 *{
@@ -93,8 +94,10 @@
     font-size: 18px;
     margin-right: 6px;
 }
-/* body */
+/* BODY */
 
+
+/* movie show */
 .movieshow{
     background-color: var(--primary-color);
     color: var(--text-while);
@@ -102,12 +105,43 @@
 
 .movieshow__base{
     padding: 56px 0;
+    position: relative;
 }
 
-.movieshow > .gird .movieshow__basegird > h2 {
+.movieshow__base > h2 {
     text-align: center;
     font-size: 35px;
 }
+
+.control {
+    width: 43px;
+    height: 40px;
+    background-color: rgb(228, 228, 228);
+    color: var(--text-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    z-index: 100;
+}
+
+.control:hover{
+    opacity: 0.9;
+}
+
+.control.next{
+    position: absolute;
+    right: 0px;
+    top: 46%;
+}
+
+.control.prev{
+    position: absolute;
+    left: 0px;
+    top: 46%;
+}
+
 
 .movies{
     width: 20%;
@@ -119,10 +153,13 @@
     position: relative;
 }
 
+.img__movies{
+    border-radius: 10px;
+}
+
 .movies img {
     width: 100%;
     border-radius: 10px;
-    
 }
 
 .movies .rank{
@@ -165,6 +202,94 @@
    font-weight: 200;
    font-size: 14px;
 }
+
+/* upcoming movie*/
+
+.nav__location{
+    align-items: center;
+}
+
+.nav__location .index,.location,.near{
+    margin: 10px;
+}
+
+.nav__location .index{
+    margin-left: 20px;
+}
+
+.nav__location .location,.near{
+    padding: 5px;
+    background-color: #ffffff;
+    border: 0.2px solid rgb(158, 158, 158);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 650;
+}
+
+.nav__location .location p,.near p {
+    padding: 0 5px;
+}
+
+.hover__btn:hover{
+    background-color: #d3d3d3;
+}
+
+/* Movie__schedule */
+.movie__schedule{
+    padding: 56px 0;
+}
+
+.movie__schedule > h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* Movie__schedule__ nav-location*/
+
+
+
+/* Movie__schedule__ nav-list__cinemas*/
+.movie__schedulebase{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.cinemas{
+    /* width: 100%; */
+    padding: 10px;
+}
+
+.list__cinemas .cinema{
+    width: 10%;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.list__cinemas .cinema a{
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+.list__cinemas .cinema p{
+   text-align: center;
+}
+
+.list__cinemas .cinema .logo__cinema{
+    /* background: red; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.list__cinemas .cinema img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+
+
 /*css footer*/
 .block{
     display:block;
@@ -181,19 +306,19 @@
 #hover-text:hover {
     color:white !important;
 }
-.footer {
+.footer > div{
     margin: 0px;
     padding: 0px; 
     font-size: 14px;
+    background: rgb(17,17,17);
 }
 
 .footer b{
     color: white;
+    font-size: 12px;
 }
 .footer .footer__top{
-    background: rgb(17,17,17);
-    margin:0px;
-    padding: 30px 200px 20px 200px !important; 
+    padding: 30px 0 30px 0;
 }
 footer a:hover {
     color:white !important ;
@@ -205,6 +330,7 @@ footer .footer__table--list a {
 }
 footer .footer__table--list span {  
     color:gray;
+    font-size: 12px;
 }
 .footer .footer__table--list  {
     justify-content: space-evenly;
@@ -251,23 +377,20 @@ footer .footer__table--list span {
     background: black;
     box-sizing:border-box ;
     position:relative;
-    width: 65%;
+    width: 54%;
+    align-items: center;
 }
 #col_3--section_top--img{
-    width:28px;
-    height:37px;
-    padding:8px 8px 7px 8px;
+    height:35px;
 }
 .col_3--section_down{
     margin-top:32px;
 }
 #col_3--section_down--img{
-    width:30px;
-    height:37px;
-    padding:8px 8px 7px 8px;
+    height:35px;
 }
 .button__text{
-    padding: 8px 8px 8px 4px;
+    padding: 5px;
 }
 .col_3--section_down .first {
     margin-top:14px !important;
@@ -317,29 +440,33 @@ footer .footer__table--list span {
 /* CSS footer down*/
 .footer .footer__down{
     background: rgb(26,26,26);
-    margin-top:0px;
-    padding: 0px; 
+    padding: 10px 0;
+    /* margin-top:0px;
+    padding: 0px;  */
     color: gray;
-    width:100%
+    width:100%;
 }
 
 .footer .footer__down img{
-    width:50px; 
-    height:50px; 
+    width:40px; 
     border-radius: 10%;
-    margin-top: 10px;
-  
 }
 .footer__down--section-right{
-    padding: 10px 0px 10px 30px;
+    align-items: center;
+    justify-content: center;
 }
 .footer__down #footer__down--text{
    line-height: 10px;
    text-indent: 10px;
 }
+
+#footer__down--text p{
+    padding-top: 9px;
+ }
+
 .footer__down > div {
     justify-content: space-between;
 }
 .footer__down--section-left{
-    padding-top:50px; 
+    margin: auto 0;
 }

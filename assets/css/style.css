@@ -665,7 +665,10 @@
     position:absolute;
     top:125px;
     left:180px;
-    border: white 1px solid;
+    border: white 2px solid;
+}
+.element--left_on button:hover{
+    transform: scale(1.15)
 }
 .element--left_on button i{
     font-size: 20px;

@@ -38,15 +38,15 @@ window.onload = function(){
     }
     
     const myText1 = document.getElementById('my-text-1');
-    truncateText(myText1, 235); 
+    truncateText(myText1, 230); 
 
     const myText2 = document.getElementById('my-text-2');
-    truncateText(myText2, 235); 
+    truncateText(myText2, 230); 
 
     const myText3 = document.getElementById('my-text-3');
-    truncateText(myText3, 235); 
+    truncateText(myText3, 230); 
 
     const myText4 = document.getElementById('my-text-4');
-    truncateText(myText4, 235); 
+    truncateText(myText4, 230); 
     
 };

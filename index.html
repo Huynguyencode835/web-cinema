@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./assets/script.js"></script>
     <title>Cinema</title>
 </head>
 <body>
@@ -48,12 +49,10 @@
         <div class="movieshow">
             <div class="movieshow__base gird">
                 <h2>Phim đang chiếu</h2>
-                <div class="movies__show flex">
-                    <div class="control prev"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="control next"><i class="fa-solid fa-chevron-right"></i></div>
-                    <div class="movies">
-                        <div>
-                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                <div id="slide__movieshow" class="movies__show flex">
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
                             <h1 class="rank">1</h1>
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
@@ -64,10 +63,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <h1 class="rank">1</h1>
+                            <h1 class="rank">2</h1>
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -77,10 +76,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <h1 class="rank">1</h1>
+                            <h1 class="rank">3</h1>
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -90,10 +89,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <h1 class="rank">1</h1>
+                            <h1 class="rank">4</h1>
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -103,10 +102,75 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <h1 class="rank">1</h1>
+                            <h1 class="rank">5</h1>
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                            <h1 class="rank">6</h1>
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
+                            <h1 class="rank">7</h1>
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                            <h1 class="rank">8</h1>
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                            <h1 class="rank">9</h1>
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__s">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
+                            <h1 class="rank">10</h1>
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -117,19 +181,18 @@
                         </div>
                     </div>
                 </div>
+                <div id="movieshow__prev" class="control prev control__hiden"><i class="fa-solid fa-chevron-left"></i></div>
+                <div id="movieshow__next" class="control next"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
         </div>
         <!-- Upcoming__movie -->
         <div class="upmovie">
             <div class="movieshow__base gird">
                 <h2>Phim sắp chiếu</h2>
-                <div class="movies__show flex">
-                    <div class="control prev"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="control next"><i class="fa-solid fa-chevron-right"></i></div>
-                    <div class="movies">
-                        <div>
-                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <!-- <h1 class="rank">1</h1> -->
+                <div id="slide__upmovie" class="movies__show flex">
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -139,10 +202,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <!-- <h1 class="rank">1</h1> -->
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -152,10 +214,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <!-- <h1 class="rank">1</h1> -->
+                
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -165,10 +227,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <!-- <h1 class="rank">1</h1> -->
+                
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -178,10 +240,75 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movies">
-                        <div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
                             <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                            <!-- <h1 class="rank">1</h1> -->
+                          
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                           
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
+                           
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                        
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                         
+                            <div class="old">16+</div>
+                            <h3>Thám Tử Lừng Danh</h3>
+                            <p>Hoạt hình, Hình sự</p>
+                            <div class="score flex">
+                                <i class="fa-solid fa-star"></i>
+                                <div>9.5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies movies__u">
+                        <div class="infor__movie">
+                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
+                        
                             <div class="old">16+</div>
                             <h3>Thám Tử Lừng Danh</h3>
                             <p>Hoạt hình, Hình sự</p>
@@ -192,6 +319,8 @@
                         </div>
                     </div>
                 </div>
+                <div id="upmovie__prev" class="control prev control__hiden"><i class="fa-solid fa-chevron-left"></i></div>
+                <div id="upmovie__next" class="control next"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
         </div>
         <!--Movie__schedule-->
@@ -274,6 +403,682 @@
                                 <p>DCINE</p>
                             </a></li>
                         </ul>
+                        <div class="search__cinemas flex">
+                            <input type="text" name="" id="" placeholder="Tìm theo tên rạp">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="showdatetheatername flex">
+                    <div class="showdate flex">
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Thứ 2</p>
+                        </div>
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Thứ 3</p>
+                        </div>
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Thứ 4</p>
+                        </div>
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Thứ 5</p>
+                        </div>
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Thứ 6</p>
+                        </div>
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Thứ 7</p>
+                        </div>
+                        <div class="day">
+                            <div class="showdate__day">
+                                <h3>20</h3>
+                            </div>
+                            <p>Chủ nhật</p>
+                        </div>
+    
+                    </div>
+                    <div class="theatername flex">
+                        <div>
+                            <img src="https://homepage.momocdn.net/next-js/_next/static/public/cinema/dexuat-icon.svg" alt="">
+                        </div>
+                        <div>
+                            <h4>Lịch chiếu phim lotte Gò Vấp</h4>
+                            <p>Tầng 3, Lotte Mart Gò Vấp, 242 Nguyễn Văn Lượng, Quận Gò Vấp </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket__list">
+                    <div class="tickets">
+                        <div class="ticket flex">
+                            <div class="ticket__movie">
+                                <div class="movies__schedule">
+                                    <div class="flex">
+                                        <div class="img__movies">
+                                            <img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="old--schedule">16+</div>
+                                            <h3>Thám Tử Lừng Danh Thám Tử Lừng Danh</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score score__schedule flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div>9.5</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__time flex">
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket flex">
+                            <div class="ticket__movie">
+                                <div class="movies__schedule">
+                                    <div class="flex">
+                                        <div class="img__movies">
+                                            <img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="old--schedule">16+</div>
+                                            <h3>Thám Tử Lừng Danh Thám Tử Lừng Danh</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score score__schedule flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div>9.5</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__time flex">
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket flex">
+                            <div class="ticket__movie">
+                                <div class="movies__schedule">
+                                    <div class="flex">
+                                        <div class="img__movies">
+                                            <img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="old--schedule">16+</div>
+                                            <h3>Thám Tử Lừng Danh Thám Tử Lừng Danh</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score score__schedule flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div>9.5</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__time flex">
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket flex">
+                            <div class="ticket__movie">
+                                <div class="movies__schedule">
+                                    <div class="flex">
+                                        <div class="img__movies">
+                                            <img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="old--schedule">16+</div>
+                                            <h3>Thám Tử Lừng Danh Thám Tử Lừng Danh</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score score__schedule flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div>9.5</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__time flex">
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket flex">
+                            <div class="ticket__movie">
+                                <div class="movies__schedule">
+                                    <div class="flex">
+                                        <div class="img__movies">
+                                            <img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="old--schedule">16+</div>
+                                            <h3>Thám Tử Lừng Danh Thám Tử Lừng Danh</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score score__schedule flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div>9.5</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__time flex">
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket flex">
+                            <div class="ticket__movie">
+                                <div class="movies__schedule">
+                                    <div class="flex">
+                                        <div class="img__movies">
+                                            <img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="old--schedule">16+</div>
+                                            <h3>Thám Tử Lừng Danh Thám Tử Lừng Danh</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score score__schedule flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <div>9.5</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__time flex">
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                                <div class="box__time">
+                                    <div class="flex">
+                                        <h3>11:45</h3><p>-13:38</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
            </div>

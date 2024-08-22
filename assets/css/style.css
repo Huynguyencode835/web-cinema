@@ -106,11 +106,18 @@
 .movieshow__base{
     padding: 56px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .movieshow__base > h2 {
     text-align: center;
     font-size: 35px;
+}
+
+
+.movies__show{
+    width: 100%;
+    height: 360px;
 }
 
 .control {
@@ -125,6 +132,15 @@
     font-weight: 500;
     z-index: 100;
 }
+
+.control__hiden{
+    display: none;
+}
+
+.control__show{
+    display: flex;
+}
+
 
 .control:hover{
     opacity: 0.9;
@@ -142,25 +158,62 @@
     top: 46%;
 }
 
-
 .movies{
     width: 20%;
     box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    transition: 0.5s;
 }
 
-.movies > div {
+
+
+.movies:nth-child(1){
+    transform: translate(0);
+}
+.movies:nth-child(2){
+    transform: translate(100%);
+}
+
+.movies:nth-child(3){
+    transform: translate(200%);
+}
+.movies:nth-child(4){
+    transform: translate(300%);
+}
+
+.movies:nth-child(5){
+    transform: translate(400%);
+}
+
+.movies:nth-child(n+6){
+    transform: translate(500%);
+}
+
+
+.infor__movie {
     padding: 20px;
     position: relative;
 }
 
+
+
+
 .img__movies{
-    border-radius: 10px;
+    border-radius: 10px;  
+    overflow: hidden;
 }
 
 .movies img {
     width: 100%;
     border-radius: 10px;
+    transition:0.5s;
 }
+
+.img__movies:hover img {
+    transform:scale(1.05);
+}
+
 
 .movies .rank{
     position: absolute;
@@ -170,7 +223,7 @@
     text-shadow: 2px 0px 2px #000;
 }
 
-.movies .old {
+.old {
     min-width: 20px;
     background-color: yellow;
     border-radius: 5px;
@@ -189,16 +242,16 @@
     color: rgba(163, 163, 163, 1)
 }
 
-.movies .score{
+.score{
     align-items: center;
 }
-.movies .score i{
+.score i{
     color: gold;
     font-size: 10px;
     padding-right: 4px;
 }
 
-.movies .score div{
+.score div{
    font-weight: 200;
    font-size: 14px;
 }
@@ -211,10 +264,6 @@
 
 .nav__location .index,.location,.near{
     margin: 10px;
-}
-
-.nav__location .index{
-    margin-left: 20px;
 }
 
 .nav__location .location,.near{
@@ -252,11 +301,13 @@
 .movie__schedulebase{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 30px;
+    padding: 30px;
+    max-height: 860.719px;
+
 }
 
 .cinemas{
-    /* width: 100%; */
-    padding: 10px;
+   width: 70%;
 }
 
 .list__cinemas .cinema{
@@ -265,9 +316,29 @@
     list-style-type: none;
 }
 
+.list__cinemas .cinema:first-child{
+    padding-left: 0;  
+}
+
+.search__cinemas{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__cinemas > input {
+    height: 30px;
+    width: 90%;
+    border: 0.2px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    margin-right: 4px;
+    padding: 3px;
+}
+
 .list__cinemas .cinema a{
     text-decoration: none;
     color: var(--text-black);
+    font-size: 12px;
 }
 
 .list__cinemas .cinema p{
@@ -288,6 +359,171 @@
     border-radius: 10px;
 
 }
+
+/* showdate & theatername */
+.showdatetheatername{
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showdatetheatername > .showdate .day {
+    height: 62px;
+    width: 64px;
+    background-color: #ffffff; 
+    color: #b1b1b1;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.showdatetheatername > .showdate .day:first-child{
+    margin-left: 0;
+}
+
+.showdatetheatername > .showdate .day div{
+    padding: 6px;
+    border-radius: 5px;
+    background-color:#f5f5f5;
+    color: var(--text-black);
+}
+
+.showdatetheatername > .showdate .day p {
+    font-size: 14px;
+}
+
+.showdatetheatername > .showdate .day:hover{
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+}
+.showdatetheatername > .showdate .day:hover .showdate__day{
+    background-color:var(--hover-color);
+    color: var(--text-while);
+}
+
+
+.showdatetheatername > .theatername{
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 300;
+    border-left: 5px solid #e5e5e5;
+}
+
+.showdatetheatername > .theatername img {
+    padding: 10px;
+}
+/* ticket__list */
+
+.ticket__list{
+    border-radius: 5px;
+    max-height: 562.81px;
+    overflow-y: scroll;
+    scrollbar-color: #e5e5e5;
+    scrollbar-width: thin;
+
+}
+
+
+.ticket__list .ticket__movie{
+    width: 60%;
+}
+
+.ticket__list .tickets > .ticket {
+    padding: 15px 0; 
+    border-bottom: 1px solid #e5e5e5;
+   
+}
+
+.ticket__list .tickets > .ticket:last-child{
+    border: none;
+}
+
+.ticket__list .ticket__movie .movies{
+    width: 30%;
+}
+
+.ticket__list .ticket__movie .movies__schedule .img__movies {
+    border-radius: 10px;
+    width: 30%;
+    padding-right: 20px;
+    
+}
+
+.ticket__list .ticket__movie .movies__schedule .img__movies img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.old--schedule{
+    width: 31px;
+    background-color: yellow;
+    border-radius: 5px;
+    color: var(--hover-color);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px;
+}
+
+.score__schedule{
+    margin-top: 158px;
+}
+
+
+.ticket__list .ticket__movie .movies > div {
+    padding: 0;
+}
+
+.ticket__time{
+    width: 40%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+.ticket__time > .box__time{
+    width: 25%;
+    padding: 5px;
+}
+
+.ticket__time > .box__time > div:hover{
+    padding: 7px;
+    border:2px solid var(--hover-color);
+}
+
+
+.ticket__time > .box__time > div{
+    border: 1px solid var(--hover-color);
+    border-radius: 5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*css footer*/

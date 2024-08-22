@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://homepage.momocdn.net/placebrand/s/momo-upload-api-190709165424-636982880641515855.jpg">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="./assets/script.js"></script>
@@ -14,17 +15,17 @@
         <nav class="header__nav">
             <div class="nav__element">
                 <ul>
-                    <li><a href="">Top phim</a></li>
-                    <li><a href="">Phim sắp chiếu</a></li>
-                    <li><a href="">Phim đang chiếu</a></li>
+                    <li><a href="">Lịch chiếu</a></li>
+                    <li><a href="">Rạp chiếu</a></li>
+                    <li><a href="">Lịch chiếu</a></li>
+                    <li><a href="">Đánh giá</a></li>
                 </ul>
             </div>
             <div class="nav__element">
                 <ul>
-                    <li><a href="">Lịch chiếu</a></li>
-                    <li><a href="">Rạp chiếu</a></li>
-                    <li><a href="">Đánh giá</a></li>
-                    <li><a href="">Khuyến mãi</a></li>
+                    <li><a href="">Phim chiếu</a></li>
+                    <li><input id="search__movie" class="" type="text" placeholder="Nhập tên phim"></li>
+                    <li><i id="iconsearch__header" class="iconsearch__header  fa-solid fa-magnifying-glass"></i></li>
                 </ul>
             </div>
           </nav>
@@ -37,9 +38,25 @@
                     <li><i class="fa-regular fa-circle-check"></i>Tha hồ chọn chỗ ngồi, mua bắp nước đơn giản</li>
                     <li><i class="fa-regular fa-circle-check"></i>Danh sách phim đa dạng</li>
                 </ul>
+                <button><h3>Xem Chi Tiết</h3></button>
             </div>
             <div class="event__slide">
-                <img src="./assets/img/event_header.jpg" height="484px" alt="">
+                <div id="list__slide" class="slide__pr">
+                    <div class="item__slide">
+                        <img src="https://homepage.momocdn.net/blogscontents/momo-amazone-s3-api-240809141933-638588099731703729.jpg" alt="">
+                    </div>
+                    <div class="item__slide">
+                        <img src="https://homepage.momocdn.net/blogscontents/momo-amazone-s3-api-240719093836-638569787166233284.jpg" alt="">
+                    </div>
+                    <div class="item__slide">
+                        <img src="https://homepage.momocdn.net/blogscontents/momo-upload-api-240503152830-638503469109863447.jpg" alt="">
+                    </div>
+                    <div class="item__slide">
+                        <img src="https://homepage.momocdn.net/blogscontents/momo-upload-api-240419135707-638491318276441391.jpg" alt="">
+                    </div>
+                </div>
+                <div id="slide__prev" class="control prev control__slidepr-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <div id="slide__next" class="control next control__slidepr-next"><i class="fa-solid fa-chevron-right"></i></div>
             </div>
           </div>
       </div>

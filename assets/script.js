@@ -92,4 +92,24 @@ window.onload = function(){
             this.classList.add("youchoise")
         }
     }
+
+    /* Hàm cắt độ dài của chuỗi (section: Bình luận nỗi bật)*/
+    function truncateText(element, maxLength) {
+        const text = element.textContent; // lấy nôị dung phần tử element gán cho text
+        if (text.length > maxLength) {
+            element.textContent = text.slice(0, maxLength) + '...';// đệ quy + nối chuỗi 
+        }
+    }
+    
+    const myText1 = document.getElementById('my-text-1');
+    truncateText(myText1, 230); 
+
+    const myText2 = document.getElementById('my-text-2');
+    truncateText(myText2, 230); 
+
+    const myText3 = document.getElementById('my-text-3');
+    truncateText(myText3, 230); 
+
+    const myText4 = document.getElementById('my-text-4');
+    truncateText(myText4, 230);
 };

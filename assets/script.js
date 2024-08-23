@@ -55,5 +55,43 @@ window.onload = function(){
         let lits = document.querySelectorAll('.movies__u');
         document.getElementById('slide__upmovie').prepend(lits[lits.length - 1]);
     }
-   
+
+    //modal__chairmovie
+
+    let moviechair = document.querySelector('.moviechair');
+    let modal = document.querySelector('.modal');
+
+    let boxtime = document.querySelectorAll('.box__time > div');
+    for(var i = 0;i<boxtime.length;i++){
+        boxtime[i].onclick = function(){
+            moviechair.classList.add("control__show")
+            modal.classList.add("control__show-flex")
+        }
+    }
+    
+    document.getElementById('close__moviechair').onclick = function(){
+        moviechair.classList.remove("control__show")
+        modal.classList.remove("control__show-flex")
+    }
+
+    document.querySelector('.modal__overlay').onclick = function(){
+        moviechair.classList.remove("control__show")
+        modal.classList.remove("control__show-flex")
+    }
+
+    let chair = document.querySelectorAll('.chair > div');
+    
+    for(var i =0; i<chair.length;i++){
+        chair[i].onclick = function(){
+            chair = this.innerHTML
+            h = `<li>
+                    ${chair}
+                </li>`
+            let first = document.querySelector("#choisechair li");
+            first.insertAdjacentHTML("beforebegin",h);
+            this.classList.add("youchoise")
+        }
+    }
 };
+
+

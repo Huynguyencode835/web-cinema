@@ -99,13 +99,6 @@
     left: 22% !important;
 }
 
-.control__slidepr-prev:hover,
-.control__slidepr-next:hover{
-    background-color: var(--hover-color);
-    color: var(--text-while);
-}
-
-
 .control__slidepr-next{
     right: 2% !important;
 }
@@ -225,8 +218,15 @@
     justify-content: center;
     font-weight: 500;
     z-index: 11;
+    transition: .3s;
     cursor: pointer;
 }
+
+.control:hover{
+    background-color: var(--hover-color);
+    color: var(--text-while);
+}
+
 
 .control__hiden{
     display: none;
@@ -302,8 +302,11 @@
 .infor__movie {
     padding: 20px;
     position: relative;
+    
 }
-
+.infor__movie >h3,p{
+    transition: .5s;
+}
 
 
 

@@ -33,7 +33,7 @@ window.onload = function(){
     document.getElementById('movieshow__next').onclick = function(){
         let lits = document.querySelectorAll('.movies__s');
         document.getElementById('slide__movieshow').appendChild(lits[0]);
-        control_prevs.classList.add("control__show")
+        control_prevs.classList.add("control__show-flex")
     }
 
     document.getElementById('movieshow__prev').onclick = function(){
@@ -48,7 +48,7 @@ window.onload = function(){
     document.getElementById('upmovie__next').onclick = function(){
         let lits = document.querySelectorAll('.movies__u');
         document.getElementById('slide__upmovie').appendChild(lits[0]);
-        control_prevu.classList.add("control__show")
+        control_prevu.classList.add("control__show-flex")
     }
 
     document.getElementById('upmovie__prev').onclick = function(){

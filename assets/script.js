@@ -16,7 +16,9 @@ window.onload = function(){
     const listmoviesearch  = document.querySelector('.imput__searchmovie');
     document.getElementById('iconsearch__header').onclick = function(){
         searchmovie_header.classList.toggle("control__show")
-        listmoviesearch.classList.toggle("control__show")
+        searchmovie_header.onclick=function(){
+            listmoviesearch.classList.toggle("control__show")
+        }
     }
 
 

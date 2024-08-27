@@ -29,7 +29,8 @@
 .header__nav{
     justify-content: space-between;
     display: flex;
-    min-height: 110px;
+    min-height: 75px;
+    align-items: center ;
 }
 
 .nav__element > ul {
@@ -38,6 +39,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 .nav__element .iconsearch__header{
     color: var(--hover-color);
@@ -299,7 +301,7 @@
 
 
 .control__hiden{
-    display: none;
+    display: none !important;
 }
 
 .control__show-flex{
@@ -346,25 +348,31 @@
 }
 
 
-.movies:nth-child(1){
+.movieshow .movies:nth-child(1),
+.upmovie .movies:nth-child(1){
     transform: translate(0);
 }
-.movies:nth-child(2){
+.movieshow .movies:nth-child(2),
+.upmovie .movies:nth-child(2){
     transform: translate(100%);
 }
 
-.movies:nth-child(3){
+.movieshow .movies:nth-child(3),
+.upmovie .movies:nth-child(3){
     transform: translate(200%);
 }
-.movies:nth-child(4){
+.movieshow .movies:nth-child(4),
+.upmovie .movies:nth-child(4){
     transform: translate(300%);
 }
 
-.movies:nth-child(5){
+.movieshow .movies:nth-child(5),
+.upmovie .movies:nth-child(5){
     transform: translate(400%);
 }
 
-.movies:nth-child(n+6){
+.movieshow .movies:nth-child(n+6),
+.upmovie .movies:nth-child(n+6){
     transform: translate(500%);
 }
 
@@ -374,6 +382,30 @@
     position: relative;
     
 }
+
+
+.movies .rank{
+    position: absolute;
+    bottom: 66px;
+    left: -1px;
+    font-size: 40px;
+    text-shadow: 2px 0px 2px #000;
+}
+
+.infor__movie >h3{
+    height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.infor__movie >h3:hover{
+    height: 52px;
+    display: block;
+}
+
+
 .infor__movie >h3,p{
     transition: .5s;
 }
@@ -383,6 +415,7 @@
 .img__movies{
     border-radius: 10px;  
     overflow: hidden;
+    max-height: 260px;
 }
 
 .movies img {
@@ -393,13 +426,7 @@
 
 
 
-.movies .rank{
-    position: absolute;
-    bottom: 70px;
-    left: 9px;
-    font-size: 40px;
-    text-shadow: 2px 0px 2px #000;
-}
+
 
 .old {
     min-width: 20px;
@@ -630,7 +657,6 @@
     border-radius: 10px;
     width: 30%;
     padding-right: 20px;
-    
 }
 
 .ticket__list .ticket__movie .movies__schedule .img__movies img {

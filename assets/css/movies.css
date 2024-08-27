@@ -1,0 +1,152 @@
+:root{
+    --primary-color:#0b090d;
+    --text-while:#fafafa;
+    --text-black:#0b090d;
+    --hover-color:#d94918;
+    --hover1-color:#db6e49;
+}
+
+
+.header{
+    background-color: var(--primary-color);
+}
+
+.home__header i{
+    font-size: 30px;
+    color: var(--hover-color);
+    transition: .5s;
+}
+
+.home__header{
+    border-left: 2px solid #d3d3d365;
+}
+
+.home__header:hover.home__header i{
+color: var(--text-while);
+}
+
+
+.movieshow{
+    background-position: top;
+    background-repeat: no-repeat; 
+}
+
+.nav__element:last-child > ul li:first-child a {
+    color: var(--hover-color);
+}
+
+.listmovies > .listmovies__base{
+    padding: 56px 0;
+}
+/* listmovies */
+.listproduct{
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* navmovies */
+.listmovies .nav__listmovies{
+    align-items: center;
+    justify-content: space-between;
+}
+.listmovies ul > li{
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+}
+.listmovies ul > li:first-child{
+    position: relative;
+}
+
+.nav__listmovies__type,
+.nav__listmovies__nation,
+.nav__listmovies__year{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 100;
+    background-color: var(--text-while);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-wrap: wrap;
+    width: 270px;
+    border-radius: 10px;
+    display: none;
+}
+
+.nav__listmovies__type > li,
+.nav__listmovies__nation > li,
+.nav__listmovies__year > li{
+    width: 42.4%;
+    margin: 3px;
+    text-align: center;
+}
+
+.nav__listmovies__type > li:hover{
+    border-color:var(--hover-color) ;
+}
+
+.nav__listmovies__type > li a,
+.nav__listmovies__nation > li a,
+.nav__listmovies__year > li a{
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+.listmovies ul > li div{
+    padding-right: 5px;
+}
+
+
+.listmovies ul > :nth-child(2){
+    position: relative;
+}
+
+.listmovies ul > :nth-child(3){
+    position: relative;
+}
+
+.listmovies .nav__search{
+    align-items: center;
+    justify-content: center;
+}
+
+.listmovies .nav__search input{
+    /* border: none; */
+    padding: 7px;
+    width: 350px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* listmovies*/
+.listproduct > .movies {
+    width: 20%;
+    position: relative;
+}
+
+.listproduct > .movies .rank{
+    display: none;
+}
+
+.infor__movie {
+    height: 335px;
+}
+
+.pagination{
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination div{
+   
+    padding: 10px;
+}
+
+.pagination div > button {
+    width: 25px;
+    height: 25px;
+    border: none;
+}

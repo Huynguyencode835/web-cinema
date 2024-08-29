@@ -159,4 +159,36 @@ window.onload = function(){
 
     const myText4 = document.getElementById('my-text-4');
     truncateText(myText4, 230);
+
+     /* JS Tin tức - Khuyến mãi */
+     const adImages = [
+        'https://cdn-www.vinid.net/2020/06/020b6aec-12-06-2020_skydeal_bannerweb_1920x1080.jpg',
+        'https://voucherbox.vn/wp-content/uploads/2022/05/Voucher-CGV-khuyen-mai-giam-gia.jpg',
+        'https://sapuwa.com/img_data/images/1(6).PNG',
+        'https://m.lottefinance.vn/images/resources/UploadImages/EVENT_MOBILE_PROD/2023/2/10/b733c124-f3d0-4964-94b3-0a5fda4387a6.png',
+    ]; 
+    /* next-button */
+    let currentImg = 0;
+    const imageNext = document.getElementById('img-content_right');
+    const nextButton = document.getElementById('next-button');
+    nextButton.addEventListener('click', () => {
+        currentImg = (currentImg + 1) % adImages.length;
+        imageNext.src = adImages[currentImg];
+    });
+    /* back-button */
+    const imageBack = document.getElementById('img-content_right');
+    const backButton = document.getElementById('back-button');
+    backButton.addEventListener('click', () => {
+        currentImg = (currentImg + 1) % adImages.length;
+        imageBack.src = adImages[Math.abs(currentImg-3)];
+    })
+    let currentImage = 0;
+    function changeAdImage(){
+        const adImageElement = document.getElementById('img-content_left');
+        adImageElement.src=adImages[currentImage];// lấy thuộc tính src trong mảng adImages áp vào phần tử ảnh hiện tại   
+        currentImage = (currentImage + 1) % adImages.length;
+        // sau 3s thì chỉ số currentImage trong mảng adImages cập nhập tăng lên 1 
+    } 
+    setInterval(changeAdImage, 3000);
+    //setInterval: chạy hàm function nhiều lần sau khoảng thời gian lặp
 };

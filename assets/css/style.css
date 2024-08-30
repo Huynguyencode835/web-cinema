@@ -52,9 +52,29 @@
     padding: 10px;
 }
 
-.list__moviesearch > div{
+.list__moviesearch > .movies{
     padding: 10px 5px;
     border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    width: 100%;
+    color: var(--text-black);
+}
+.list__moviesearch > .movies .infor__movie{
+    width: 80%;
+    margin: auto;
+}
+
+.list__moviesearch > .movies .infor__movie .rank{
+    bottom: 27%;
+    color: gold;
+}
+
+.list__moviesearch > .movies .infor__movie h3{
+    height: auto;
+    display: block;
+}
+.list__moviesearch > .movies .img__movies{
+    max-height: none;
 }
 
 .imput__searchmovie{
@@ -234,7 +254,7 @@
     margin-right: 6px;
 }
 
-.event__infor > button {
+.btn__more {
     margin-top: 40px;
     border: none;
     height: 45px;
@@ -246,7 +266,7 @@
 }
 
 
-.event__infor > button:hover{
+.btn__more:hover{
     background-color: transparent;
     border: 2px solid var(--hover-color);
     border-radius: 9px;
@@ -899,6 +919,10 @@
        }
 }
 
+#see_more--comment{ 
+    display:none;
+}
+
 /* Css Tin tức - Khuyến mãi */
 .promotion{
     padding:56px 0px;
@@ -996,6 +1020,30 @@
 
 .promotion .button__see_more{
     padding-top: 56px;
+}
+
+#see_more--promotion{
+    display:none;
+}
+
+#button--backToTop{
+    display: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--hover-color);
+    border:#bdbdbd 1px solid;
+    border-radius: 50%;
+    width:50px;
+    height:50px; 
+    color: var(--text-while);
+    cursor: pointer;
+}
+#button--backToTop:hover{
+    color: #171717;
+}
+#button--backToTop i { 
+    font-size: 20px;
 }
 
 /* modal */
@@ -1261,6 +1309,110 @@
     background-color: var(--hover-color);
     color: var(--text-while);
     font-weight: 600;
+}
+
+/* modal movies */
+
+.modal__body .movies__modal{
+    max-width: 1100px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: rgba(0, 0, 0);
+    padding: 50px;
+    display: none;
+}
+
+.modal__body .movies__modal > .infor__moviesearch >div:nth-child(2){
+    color: var(--text-while);
+    font-size: 24px;
+    padding: 0 10px;
+}
+.movies__modal__btn{
+    justify-content: space-between;
+}
+
+.movies__modal__btn button{
+    margin-top: 10px;
+    width: 48%;
+}
+
+.movies__modal__btn button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid var(--hover-color);
+}
+
+.movies__modal__btn button:nth-child(2):hover{
+    background-color: var(--hover-color);
+    color: var(--text-black);
+}
+
+.modal__body .movies__modal > .infor__moviesearch >div:nth-child(2) p{
+    font-size: 16px;
+    color:#d3d3d3;
+}
+
+.modal__body .movies__modal > .infor__moviesearch >div:nth-child(2) >.score{
+    padding-top:0;
+}
+.modal__body .movies__modal > .infor__moviesearch >div:nth-child(2) .rank{
+    bottom: 9%;
+    left: -43%;
+}
+
+.modal__body .movies__modal > .infor__moviesearch >div:nth-child(2) .old{
+    top: 2%;
+    left: -6%;
+}
+
+.modal__body .movies__modal .img__moviessearch{
+    width: 30%;
+}
+
+.modal__body .infor__moviesearch > div:nth-child(2){
+    width: 70%;
+}
+
+.modal__body .infor__moviesearch > div:nth-child(2) .ticket__time{
+    width: 100%;
+}
+
+.modal__body .infor__moviesearch > div:nth-child(2) .list__cinemas .cinemas{
+    width: 100%;
+}
+
+.modal__body .infor__moviesearch > div:nth-child(2) .theatername > div:nth-child(2)>h4{
+    font-size: 16px;
+}
+
+.modal__body .infor__moviesearch > div:nth-child(2) .theatername > div:nth-child(2)>p{
+    font-size: 12px;
+}
+
+.ticket__time > .box__timev1{
+    width: 25%;
+    padding: 5px;
+}
+
+.ticket__time > .box__timev1 > div:hover{
+    padding: 7px;
+    border:2px solid var(--hover-color);
+}
+
+.ticket__time > .box__timev1 > div{
+    border: 1px solid var(--hover-color);
+    border-radius: 5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+/* trailer__modal */
+
+.trailer__modal{
+    display: none;
 }
 /*css footer*/
 .block{

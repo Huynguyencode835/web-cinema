@@ -16,12 +16,25 @@ window.onload = function(){
     const listmoviesearch  = document.querySelector('.imput__searchmovie');
     document.getElementById('iconsearch__header').onclick = function(){
         searchmovie_header.classList.toggle("control__show")
-        searchmovie_header.onclick=function(){
-            listmoviesearch.classList.toggle("control__show")
-        }
+        listmoviesearch.classList.remove("control__show")
     }
+   
 
+    var searchinput__header = document.getElementById('search__movie');
+    searchinput__header.addEventListener('input',function(e){
+        let txtsearch = e.target.value.trim().toLowerCase();
+        let listProduct = document.querySelectorAll('.list__moviesearch .movies > .infor__movie');
 
+        for(var i = 0;i<listProduct.length;i++){
+            if(listProduct[i].innerText.toLowerCase().includes(txtsearch)){
+                listProduct[i].parentElement.classList.remove("control__hiden");
+                listmoviesearch.classList.add("control__show")
+            }
+            else{
+                listProduct[i].parentElement.classList.add("control__hiden");
+            }
+        }
+    })
 
     //slide header
     let enventchangeslide = setInterval(function(){
@@ -76,6 +89,7 @@ window.onload = function(){
     let timemv = document.getElementById('time__modal');
     for(var i = 0;i<boxtime.length;i++){
         boxtime[i].onclick = function(){
+            movies__modal.classList.remove("control__show-flex")
             moviechair.classList.add("control__show")
             modal.classList.add("control__show-flex")
             namemovie__molal.innerText = this.parentElement.parentElement.previousElementSibling.querySelector('.name__mv').innerText;
@@ -124,6 +138,7 @@ window.onload = function(){
         deletechair();
     }
 
+    let trailer__modal = document.querySelector('.trailer__modal');
 
     // hiden modal
     document.getElementById('close__moviechair').onclick = function(){
@@ -138,7 +153,40 @@ window.onload = function(){
         deletechair();
     }
 
-
+    //modal movies
+    let movies__modal= document.querySelector('.movies__modal');
+    let informovies = document.querySelectorAll('.infor__movie');
+    for(var i =0;i<informovies.length;i++){
+        informovies[i].onclick = function(){
+            trailer__modal.classList.remove("control__show");
+            modal.classList.add("control__show-flex")
+            movies__modal.classList.add("control__show-flex")
+            movies__modal.querySelector('.img__moviessearch img').src=this.querySelector('.img__movies img').src;
+            movies__modal.querySelector('.rank').innerText = this.querySelector('.rank').innerText;
+            movies__modal.querySelector('.infor__moviesearch > div:nth-child(2) h3').innerText = this.querySelector('h3').innerText;
+            movies__modal.querySelector('.infor__moviesearch > div:nth-child(2) p').innerText = this.querySelector('p').innerText;
+            movies__modal.querySelector('.infor__moviesearch > div:nth-child(2) .score >div').innerText = this.querySelector('.score div').innerText;
+            let boxtimev1 = document.querySelectorAll('.box__timev1 > div');
+    
+            for(var i = 0;i<boxtimev1.length;i++){
+                boxtimev1[i].onclick = function(){
+                    modal.classList.remove("control__show-flex")
+                    movies__modal.classList.remove("control__show-flex")
+                    moviechair.classList.add("control__show")
+                    modal.classList.add("control__show-flex")
+                    namemovie__molal.innerText = movies__modal.querySelector('.infor__moviesearch > div:nth-child(2) h3').innerText;
+                    category__molal__modal.innerText =movies__modal.querySelector('.infor__moviesearch > div:nth-child(2) p').innerText;
+                    timemv.innerHTML = this.innerHTML;
+                }
+            }
+            let trailer = this.querySelector('.trailer').innerHTML;
+            document.querySelector('.movies__modal .movies__modal__btn > .btn__more:nth-child(1)').onclick=function(){
+                movies__modal.classList.remove("control__show-flex")
+                trailer__modal.classList.add("control__show");
+                trailer__modal.innerHTML = trailer;
+            }
+        }
+    }
 
     /* Hàm cắt độ dài của chuỗi (section: Bình luận nỗi bật)*/
     function truncateText(element, maxLength) {
@@ -150,15 +198,20 @@ window.onload = function(){
     
     const myText1 = document.getElementById('my-text-1');
     truncateText(myText1, 230); 
-
     const myText2 = document.getElementById('my-text-2');
     truncateText(myText2, 230); 
-
     const myText3 = document.getElementById('my-text-3');
     truncateText(myText3, 230); 
-
     const myText4 = document.getElementById('my-text-4');
     truncateText(myText4, 230);
+    const myText5 = document.getElementById('my-text-5');
+    truncateText(myText5, 230); 
+    const myText6 = document.getElementById('my-text-6');
+    truncateText(myText6, 230); 
+    const myText7 = document.getElementById('my-text-7');
+    truncateText(myText7, 230); 
+    const myText8 = document.getElementById('my-text-8');
+    truncateText(myText8, 230);
 
      /* JS Tin tức - Khuyến mãi */
      const adImages = [
@@ -191,4 +244,33 @@ window.onload = function(){
     } 
     setInterval(changeAdImage, 3000);
     //setInterval: chạy hàm function nhiều lần sau khoảng thời gian lặp
+     /* JS nút button quay lại đầu trang*/
+     const backToTop = document.getElementById('button--backToTop');
+     window.addEventListener('scroll', () => {
+         if (window.scrollY > 100) {
+             backToTop.style.display = 'block';
+         } else {
+             backToTop.style.display = 'none';
+         }
+     });
+     backToTop.addEventListener('click', () => {
+         window.scrollTo({
+             top: 0,
+             behavior: 'smooth', // Chức năng cuộn mượt hơn đến đầu trang
+         });
+     });
+
+     let seeMoreButtonComment = document.getElementById('button__see_more--comment');
+     let seeMoreComment = document.getElementById('see_more--comment');
+     seeMoreButtonComment.addEventListener('click',() =>{
+        seeMoreComment.style.display = 'block';
+        seeMoreButtonComment.style.display = 'none';
+     })
+     
+     let seeMoreButtonPromotion = document.getElementById('button__see_mone--promotion');
+     let seeMorePromotion = document.getElementById('see_more--promotion');
+     seeMoreButtonPromotion.addEventListener('click',() =>{
+        seeMorePromotion.style.display = 'block';
+        seeMoreButtonPromotion.style.display = 'none';
+     })
 };

@@ -12,17 +12,27 @@
 }
 
 .home__header i{
-    font-size: 30px;
+    font-size: 20px;
     color: var(--hover-color);
     transition: .5s;
 }
 
-.home__header{
-    border-left: 2px solid #d3d3d365;
+.home__header i{
+    padding-left: 10px;
+    border-left: 1px solid gray;
+    
+}
+
+.nav__element:first-child li:first-child>a{
+    padding-right: 0;
+}
+
+.logo__header img{
+    width: 40px;
 }
 
 .home__header:hover.home__header i{
-color: var(--text-while);
+    color: var(--text-while);
 }
 
 
@@ -129,10 +139,6 @@ color: var(--text-while);
 
 .listproduct > .movies .rank{
     display: none;
-}
-
-.infor__movie {
-    height: 335px;
 }
 
 .pagination{

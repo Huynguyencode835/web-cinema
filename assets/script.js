@@ -36,6 +36,27 @@ window.onload = function(){
         }
     })
 
+    let header__nav = document.querySelector('.header__nav');
+
+    //phim đang chieu >508
+    //phim sap chieu > 1032
+    window.addEventListener('scroll', function() {
+        console.log(document.documentElement.scrollTop)
+       if(document.documentElement.scrollTop>65){
+            header__nav.style.background="linear-gradient(164deg, rgba(217,73,24,1) 0%, rgba(219,110,73,1) 63%, rgba(255,205,178,1) 100%)";
+            header__nav.classList.remove("gird");
+            header__nav.style.padding="0 244px";
+            header__nav.style.width="100%";
+            header__nav.style.right="0";
+       }else{
+            header__nav.style.background="transparent";
+            header__nav.classList.add("gird");
+            header__nav.style.padding="0";
+            header__nav.style.right="auto";
+            header__nav.style.width="inherit";
+       }
+    });
+
     //slide header
     let enventchangeslide = setInterval(function(){
         control__prev('.item__slide','list__slide');
@@ -116,7 +137,6 @@ window.onload = function(){
     }
     for(var i =0; i<chair.length;i++){
         chair[i].onclick = function(){
-            
             let contentchair = this.innerHTML
             h = `<li>
                     ${contentchair}

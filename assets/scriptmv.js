@@ -19,6 +19,9 @@ window.onload = function(){
         listmoviesearch.classList.remove("control__show")
     }
    
+    document.querySelector('.header__nav .nav-logo').onclick=function(){
+        document.querySelector('.header__nav .nav__element:nth-child(2)').classList.toggle('control__show');
+    }
 
     var searchinput__header = document.getElementById('search__movie');
     searchinput__header.addEventListener('input',function(e){
@@ -35,6 +38,42 @@ window.onload = function(){
             }
         }
     })
+
+    let header__nav = document.querySelector('.header__nav');
+
+    //phim đang chieu >508
+    //phim sap chieu > 1032
+    function coloradd(){
+       let color = document.querySelectorAll('.header__nav .nav__element:nth-child(2) a');
+       document.querySelector('.header__nav .nav__element:nth-child(2) ul').classList.add("color_black-br");
+       document.querySelector('.nav-logo').classList.add("color_black");
+       for(var i = 0 ;i<color.length;i++){
+        color[i].classList.add("color_black");
+       }
+    }
+    function colorre(){
+        let color = document.querySelectorAll('.header__nav .nav__element:nth-child(2) a');
+        document.querySelector('.header__nav .nav__element:nth-child(2) ul').classList.remove("color_black-br");
+       document.querySelector('.nav-logo').classList.remove("color_black");
+        for(var i = 0 ;i<color.length;i++){
+         color[i].classList.remove("color_black");
+        }
+     }
+    window.addEventListener('scroll', function() {
+       if(document.documentElement.scrollTop>65){
+            header__nav.style.background="#0b090d";
+            if(document.documentElement.scrollTop>503){
+                header__nav.style.background="#ffffff";
+                coloradd();
+           }else{
+                colorre();
+           }
+       }
+       else{
+            header__nav.style.background="transparent";
+            colorre();
+       }
+    });
     // BODY
     //control movie_show
 

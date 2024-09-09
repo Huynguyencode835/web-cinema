@@ -19,12 +19,14 @@ window.onload = function(){
         listmoviesearch.classList.remove("control__show")
     }
    
+    document.querySelector('.header__nav .nav-logo').onclick=function(){
+        document.querySelector('.header__nav .nav__element:nth-child(2)').classList.toggle('control__show');
+    }
 
     var searchinput__header = document.getElementById('search__movie');
     searchinput__header.addEventListener('input',function(e){
         let txtsearch = e.target.value.trim().toLowerCase();
         let listProduct = document.querySelectorAll('.list__moviesearch .movies > .infor__movie');
-
         for(var i = 0;i<listProduct.length;i++){
             if(listProduct[i].innerText.toLowerCase().includes(txtsearch)){
                 listProduct[i].parentElement.classList.remove("control__hiden");
@@ -40,20 +42,35 @@ window.onload = function(){
 
     //phim đang chieu >508
     //phim sap chieu > 1032
+    function coloradd(){
+       let color = document.querySelectorAll('.header__nav .nav__element:nth-child(2) a');
+       document.querySelector('.header__nav .nav__element:nth-child(2) ul').classList.add("color_black-br");
+       document.querySelector('.nav-logo').classList.add("color_black");
+       for(var i = 0 ;i<color.length;i++){
+        color[i].classList.add("color_black");
+       }
+    }
+    function colorre(){
+        let color = document.querySelectorAll('.header__nav .nav__element:nth-child(2) a');
+        document.querySelector('.header__nav .nav__element:nth-child(2) ul').classList.remove("color_black-br");
+       document.querySelector('.nav-logo').classList.remove("color_black");
+        for(var i = 0 ;i<color.length;i++){
+         color[i].classList.remove("color_black");
+        }
+     }
     window.addEventListener('scroll', function() {
-        console.log(document.documentElement.scrollTop)
        if(document.documentElement.scrollTop>65){
-            header__nav.style.background="linear-gradient(164deg, rgba(217,73,24,1) 0%, rgba(219,110,73,1) 63%, rgba(255,205,178,1) 100%)";
-            header__nav.classList.remove("gird");
-            header__nav.style.padding="0 244px";
-            header__nav.style.width="100%";
-            header__nav.style.right="0";
-       }else{
+            header__nav.style.background="#0b090d";
+            if(document.documentElement.scrollTop>1133){
+                header__nav.style.background="#ffffff";
+                coloradd();
+           }else{
+                colorre();
+           }
+       }
+       else{
             header__nav.style.background="transparent";
-            header__nav.classList.add("gird");
-            header__nav.style.padding="0";
-            header__nav.style.right="auto";
-            header__nav.style.width="inherit";
+            colorre();
        }
     });
 
@@ -208,31 +225,6 @@ window.onload = function(){
         }
     }
 
-    /* Hàm cắt độ dài của chuỗi (section: Bình luận nỗi bật)*/
-    function truncateText(element, maxLength) {
-        const text = element.textContent; // lấy nôị dung phần tử element gán cho text
-        if (text.length > maxLength) {
-            element.textContent = text.slice(0, maxLength) + '...';// đệ quy + nối chuỗi 
-        }
-    }
-    
-    const myText1 = document.getElementById('my-text-1');
-    truncateText(myText1, 230); 
-    const myText2 = document.getElementById('my-text-2');
-    truncateText(myText2, 230); 
-    const myText3 = document.getElementById('my-text-3');
-    truncateText(myText3, 230); 
-    const myText4 = document.getElementById('my-text-4');
-    truncateText(myText4, 230);
-    const myText5 = document.getElementById('my-text-5');
-    truncateText(myText5, 230); 
-    const myText6 = document.getElementById('my-text-6');
-    truncateText(myText6, 230); 
-    const myText7 = document.getElementById('my-text-7');
-    truncateText(myText7, 230); 
-    const myText8 = document.getElementById('my-text-8');
-    truncateText(myText8, 230);
-
      /* JS Tin tức - Khuyến mãi */
      const adImages = [
         'https://cdn-www.vinid.net/2020/06/020b6aec-12-06-2020_skydeal_bannerweb_1920x1080.jpg',
@@ -282,15 +274,29 @@ window.onload = function(){
 
      let seeMoreButtonComment = document.getElementById('button__see_more--comment');
      let seeMoreComment = document.getElementById('see_more--comment');
+     let hideComment = document.getElementById('hide--comment');
      seeMoreButtonComment.addEventListener('click',() =>{
         seeMoreComment.style.display = 'block';
         seeMoreButtonComment.style.display = 'none';
+        hideComment.style.display = 'block';
+     })
+     hideComment.addEventListener('click',() =>{
+        seeMoreComment.style.display = 'none';
+        seeMoreButtonComment.style.display = 'block';
+        hideComment.style.display = 'none';
      })
      
      let seeMoreButtonPromotion = document.getElementById('button__see_mone--promotion');
      let seeMorePromotion = document.getElementById('see_more--promotion');
+     let hidePromotion = document.getElementById('hide--promotion');
      seeMoreButtonPromotion.addEventListener('click',() =>{
         seeMorePromotion.style.display = 'block';
         seeMoreButtonPromotion.style.display = 'none';
+        hidePromotion.style.display = 'block';
+     })
+     hidePromotion.addEventListener('click',() =>{
+        seeMorePromotion.style.display = 'none';
+        seeMoreButtonPromotion.style.display = 'block';
+        hidePromotion.style.display = 'none';
      })
 };

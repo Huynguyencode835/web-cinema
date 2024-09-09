@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://homepage.momocdn.net/placebrand/s/momo-upload-api-190709165424-636982880641515855.jpg">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/movies.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="./assets/scriptmv.js"></script>
@@ -13,294 +13,297 @@
 <body>
     <header class="header">
       <div class="gird">
-        <nav class="header__nav">
+        <nav class="header__nav gird">
             <div class="nav__element">
                 <ul>
                     <li class="logo__header"><a href="">
                         <img style="width: 50px; border-radius: 10px;" src="https://homepage.momocdn.net/placebrand/s/momo-upload-api-190709165424-636982880641515855.jpg" alt="logo">
                     </a></li>
                     <li><a class="home__header" href="./index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="">Lịch chiếu</a></li>
-                    <li><a href="">Rạp chiếu</a></li>
-                    <li><a href="">Lịch chiếu</a></li>
-                    <li><a href="">Đánh giá</a></li>
                 </ul>
             </div>
             <div class="nav__element">
                 <ul>
-                    <li><a href="">Phim chiếu</a></li>
-                    <li class="header__searchmovie">
-                        <input id="search__movie" class="" type="text" placeholder="Nhập tên phim">
-                        <div class="imput__searchmovie">
-                            <div class="list__moviesearch">
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
-                                        <h1 class="rank">1</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Shin Cậu Bé Bút Chì: Nhật Ký Khủng Long Của Mình</h3>
-                                        <p>Hài, Hoạt hình</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>9.5</div>
+                    <li><a href="#movie__schedule">Lịch chiếu</a></li>
+                    <li><a href="#comment">Đánh giá</a></li>
+                    <li><a href="./movies.html">Phim chiếu</a></li>
+                    <div class="flex">
+                        <li class="header__searchmovie">
+                            <input id="search__movie" class="" type="text" placeholder="Nhập tên phim">
+                            <div class="imput__searchmovie">
+                                <div class="list__moviesearch">
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/103928333282582033-Untitled-1.jpg" alt=""></div>
+                                            <h1 class="rank">1</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Shin Cậu Bé Bút Chì: Nhật Ký Khủng Long Của Mình</h3>
+                                            <p>Hài, Hoạt hình</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>9.5</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
-                                        <h1 class="rank">2</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô</h3>
-                                        <p>Hoạt hình, Hình sự</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>9.5</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="./assets/img/100409012704431103-conan.jpg" alt=""></div>
+                                            <h1 class="rank">2</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô</h3>
+                                            <p>Hoạt hình, Hình sự</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>9.5</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/52528406612837557-Untitled-1.jpg" alt=""></div>
-                                        <h1 class="rank">3</h1>
-                                        <div class="old">16+</div>
-                                        <h3>MA DA</h3>
-                                        <p>Kinh Dị</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>8</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/52528406612837557-Untitled-1.jpg" alt=""></div>
+                                            <h1 class="rank">3</h1>
+                                            <div class="old">16+</div>
+                                            <h3>MA DA</h3>
+                                            <p>Kinh Dị</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>8</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/52615077350325982-lamgiàu-với-ma.jpg" alt=""></div>
-                                        <h1 class="rank">4</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Làm Giàu Với Ma</h3>
-                                        <p>Hài, Gia Đình</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>6.8</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/52615077350325982-lamgiàu-với-ma.jpg" alt=""></div>
+                                            <h1 class="rank">4</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Làm Giàu Với Ma</h3>
+                                            <p>Hài, Gia Đình</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>6.8</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59076567096398599-sVb5npjh1XilnStwDBehFfVWPSv.jpg" alt=""></div>
-                                        <h1 class="rank">5</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Harold và Cây Bút Phép Thuật</h3>
-                                        <p>Hài, Phiêu Lưu</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>9.1</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59076567096398599-sVb5npjh1XilnStwDBehFfVWPSv.jpg" alt=""></div>
+                                            <h1 class="rank">5</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Harold và Cây Bút Phép Thuật</h3>
+                                            <p>Hài, Phiêu Lưu</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>9.1</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/53203182406907125-tvOCYS5oinihBfzb9qzjgR7zE4Z.jpg" alt=""></div>
-                                        <h1 class="rank">6</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Hai Muối</h3>
-                                        <p>Chính Kịch, Gia Đình</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>10</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/53203182406907125-tvOCYS5oinihBfzb9qzjgR7zE4Z.jpg" alt=""></div>
+                                            <h1 class="rank">6</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Hai Muối</h3>
+                                            <p>Chính Kịch, Gia Đình</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>10</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/53203305529839151-Untitled-1.jpg" alt=""></div>
-                                        <h1 class="rank">7</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Đả Nữ Báo Thù</h3>
-                                        <p>Hình Sự, Chính Kịch</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>3.2</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/53203305529839151-Untitled-1.jpg" alt=""></div>
+                                            <h1 class="rank">7</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Đả Nữ Báo Thù</h3>
+                                            <p>Hình Sự, Chính Kịch</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>3.2</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/52004062221019772-deptrai.jpg" alt=""></div>
-                                        <h1 class="rank">8</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Đẹp Trai Thấy Sai Sai</h3>
-                                        <p>Hài, Kinh Dị</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>9.6</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/52004062221019772-deptrai.jpg" alt=""></div>
+                                            <h1 class="rank">8</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Đẹp Trai Thấy Sai Sai</h3>
+                                            <p>Hài, Kinh Dị</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>9.6</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59077395433771429-iFU4OsKWyZbetd20gwll2Y2j4M0.jpg" alt=""></div>
-                                        <h1 class="rank">9</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Borderlands</h3>
-                                        <p>Khoa Học Viễn Tưởng, Phiêu Lưu</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>7.5</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59077395433771429-iFU4OsKWyZbetd20gwll2Y2j4M0.jpg" alt=""></div>
+                                            <h1 class="rank">9</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Borderlands</h3>
+                                            <p>Khoa Học Viễn Tưởng, Phiêu Lưu</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>7.5</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/104107255054772381-Untitled-1.jpg" alt=""></div>
-                                        <h1 class="rank">10</h1>
-                                        <div class="old">16+</div>
-                                        <h3>Quái Vật Không Gian: Romulus</h3>
-                                        <p>Kinh Dị,Khoa Học Viễn Tưởng,Gay Cấn</p>
-                                        <div class="score flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div>8.5</div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/104107255054772381-Untitled-1.jpg" alt=""></div>
+                                            <h1 class="rank">10</h1>
+                                            <div class="old">16+</div>
+                                            <h3>Quái Vật Không Gian: Romulus</h3>
+                                            <p>Kinh Dị,Khoa Học Viễn Tưởng,Gay Cấn</p>
+                                            <div class="score flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div>8.5</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59076255300090807-Untitled-2.jpg" alt=""></div>
-                                    <h1 class="rank"></h1>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59076255300090807-Untitled-2.jpg" alt=""></div>
                                         <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Sói 200%</h3>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
-                                        </div>
-                                        <p>Hoạt hình, Gia Đình</p>
-                                    </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/53203902591862249-Untitled-1.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Bố Gà Siêu Đẳng: Trận Chiến Trên Băng</h3>
-                                        <p>Hài, Hoạt Hình</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Sói 200%</h3>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
+                                            <p>Hoạt hình, Gia Đình</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/53204039468922763-hell.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Hellboy: Đại Chiến Quỷ Dữ</h3>
-                                        <p>Kinh Dị, Giả Tưởng</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/53203902591862249-Untitled-1.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Bố Gà Siêu Đẳng: Trận Chiến Trên Băng</h3>
+                                            <p>Hài, Hoạt Hình</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59078504212545537-vDkKo5UuBTFBHCqZhh8ty83ayV3.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Ma Siêu Quậy</h3>
-                                        <p>Hài, Kinh Dị</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/53204039468922763-hell.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Hellboy: Đại Chiến Quỷ Dữ</h3>
+                                            <p>Kinh Dị, Giả Tưởng</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079174152378526-pexbpvnSQLm6x1QGUhl7geqeEaz.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Transformers Một</h3>
-                                        <p>Khoa Học Viễn Tưởng, Hoạt Hình</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59078504212545537-vDkKo5UuBTFBHCqZhh8ty83ayV3.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Ma Siêu Quậy</h3>
+                                            <p>Hài, Kinh Dị</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/52613133200744253-cám.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>CÁM</h3>
-                                        <p>Kinh Dị</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079174152378526-pexbpvnSQLm6x1QGUhl7geqeEaz.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Transformers Một</h3>
+                                            <p>Khoa Học Viễn Tưởng, Hoạt Hình</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079368742191909-Untitled-2.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Wolfs</h3>
-                                        <p>Gay Cấn</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/52613133200744253-cám.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>CÁM</h3>
+                                            <p>Kinh Dị</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/37472853072716025-xqjsuwiihnPk5YTYgJQRTSfkQr6.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Joker: Folie à Deux - Điên Có Đôi</h3>
-                                        <p>Hình Sự, Chính Kịch</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079368742191909-Untitled-2.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Wolfs</h3>
+                                            <p>Gay Cấn</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079520403014149-hn4fOpFlbak5ruxkdrmdijs38Yl.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Robot Hoang Dã</h3>
-                                        <p>Khoa Học Viễn Tưởng, Hoạt Hình</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/37472853072716025-xqjsuwiihnPk5YTYgJQRTSfkQr6.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Joker: Folie à Deux - Điên Có Đôi</h3>
+                                            <p>Hình Sự, Chính Kịch</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="movies">
-                                    <div class="infor__movie">
-                                        <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079680634476340-srX0KC0LCbJBFb4OKVPqY9FrNag.jpg" alt=""></div>
-                                        <h1 class="rank"></h1>
-                                        <div class="old">16+</div>
-                                        <h3>Mufasa: Vua Sư Tử</h3>
-                                        <p>Hoạt Hình, Phiêu Lưu</p>
-                                        <div class="score control__hiden flex">
-                                            <i class="fa-solid fa-star"></i>
-                                            <div></div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079520403014149-hn4fOpFlbak5ruxkdrmdijs38Yl.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Robot Hoang Dã</h3>
+                                            <p>Khoa Học Viễn Tưởng, Hoạt Hình</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="movies">
+                                        <div class="infor__movie">
+                                            <div class="img__movies"><img src="https://cinema.momocdn.net/img/59079680634476340-srX0KC0LCbJBFb4OKVPqY9FrNag.jpg" alt=""></div>
+                                            <h1 class="rank"></h1>
+                                            <div class="old">16+</div>
+                                            <h3>Mufasa: Vua Sư Tử</h3>
+                                            <p>Hoạt Hình, Phiêu Lưu</p>
+                                            <div class="score control__hiden flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <div></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li><i id="iconsearch__header" class="iconsearch__header  fa-solid fa-magnifying-glass"></i></li>
+                        </li>
+                        <li><i id="iconsearch__header" class="iconsearch__header  fa-solid fa-magnifying-glass"></i></li>
+                    </div>
                 </ul>
             </div>
-        </nav>
+            <div class="nav-logo">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>  
       </div>
     </header>
     <body>
@@ -1560,7 +1563,6 @@
                                 <a href="">Phim đang chiếu </a>
                                 <a href="">Phim sắp chiếu</a>
                                 <a href="">Lịch chiếu</a>
-                                <a href="">Rạp chiếu phim</a>
                                 <a href="">Đánh giá</a>
                                 <a href="">Khuyến mãi</a>    
                         </div>
@@ -1649,8 +1651,8 @@
                                 <div  class="flex col_3--section--button">
                                     <img id="col_3--section_down--img" src="./assets/img/shake_hands.jpg" alt="icon">
                                     <div class="flex-wrap button__text"> 
-                                        <span>Hợp tác danh nghiệp</span><br>
-                                        <b>ĐĂNG KÝ HỢP TÁC</b>
+                                        <span>NGUYỄN QUỐC HUY</span><br>
+                                        <b>2351050059</b>
                                     </div>
                                 </div>
                             </a>

@@ -363,13 +363,13 @@
 .control.next{
     position: absolute;
     right: 0px;
-    top: 46%;
+    top: 52%;
 }
 
 .control.prev{
     position: absolute;
     left: 0px;
-    top: 46%;
+    top: 52%;
 }
 
 .movies{
